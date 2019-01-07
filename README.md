@@ -17,5 +17,5 @@ Directly Connect to the PropHuntV Official Server: **prophunt.mooshe.tv:30120**
 That's all it takes! Very simple, straight-forward, and doesn't require anything else to be installed.
 
 
-If you enjoyed this work, please consider supporting my on my Patreon here:
+If you enjoyed this work, please consider supporting me on my Patreon here:
 https://www.patreon.com/mooshe
