@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>PropHuntV Resource - by Mooshe</title>
+		<link rel="stylesheet" href="index.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+		<div class="countdown" style="display: none;">
+			<p id="countdown">00:00</p>
+			<p id="countdown-message"></p>
+		</div>
+		<div id="notification">
+		</div>
+		<div class="quit-container">
+			<div class="quit-window">
+				Are you sure you want to quit?
+				<div class="quit-options">
+					<span id="quit-yes">Yes</span>
+					<span id="quit-no">No</span>
+				</div>
+			</div>
+		</div>
+		<div id="lobby-manager">
+			<div class="lobby-top-row">
+				<div class="logo"></div>
+				<span class="active default" id="player">Player</span>
+				<span id="play">Play</span>
+				<span id="customize" data-target="edit">Customize</span>
+				<span id="quit">Quit</span>
+			</div>
+			<div id="info"></div>
+			<div id="edit" style="display: none;">
+				<span class="edit-title">Select Your Model</span>
+				<div id="character-selection">
+
+				</div>
+			</div>
+		</div>
+		<div id="playercount" class="opaque">
+			0 Online
+		</div>
+	</body>
+</html>

@@ -1,0 +1,183 @@
+{
+	"DefaultCharacter": "JoeMinuteman",
+	"PropHunterRatio": 0.75,
+	"RoundTime": 600,
+	"HideTime": 30,
+	"WaitTime": 60,
+	"MinPlayers": 2,
+	"AliveReward": 10.0,
+	"SurviveReward": 0.025,
+	"KillReward": 5.0,
+	"WinReward": 30,
+	"WaitWeapons": [
+		{"Weapon": "BullpupRifle", "Ammo": 30},
+		{"Weapon": "PumpShotgun", "Ammo": 30},
+		{"Weapon": "Firework", "Ammo": 1},
+		{"Weapon": "Flare", "Ammo": 1},
+		{"Weapon": "Snowball", "Ammo": 10}
+	],
+	"HuntWeapons": [
+		{"Weapon": "BullpupRifle", "Ammo": 30},
+		{"Weapon": "PumpShotgun", "Ammo": 30},
+		{"Weapon": "Grenade", "Ammo": 2},
+		{"Weapon": "PipeBomb", "Ammo": 1}
+	],
+	"Characters": [
+		{
+			"ModelName": "JoeMinuteman",
+			"Unlocked": true,
+			"PointCost": 0
+		},
+		{
+			"ModelName": "Tourist01AMM",
+			"Unlocked": false,
+			"PointCost": 100
+		},
+		{
+			"ModelName": "Beach01AFM",
+			"Unlocked": false,
+			"PointCost": 250
+		},
+		{
+			"ModelName": "TrafficWarden",
+			"Unlocked": false,
+			"PointCost": 500
+		},
+		{
+			"ModelName": "Juggalo01AMY",
+			"Unlocked": false,
+			"PointCost": 1000
+		},
+		{
+			"ModelName": "Jesus01",
+			"Unlocked": false,
+			"PointCost": 2000
+		},
+		{
+			"ModelName": "Juggalo01AFY",
+			"Unlocked": false,
+			"PointCost": 4000
+		},
+		{
+			"ModelName": "Babyd",
+			"Unlocked": false,
+			"PointCost": 6000
+		},
+		{
+			"ModelName": "Bodybuild01AFM",
+			"Unlocked": false,
+			"PointCost": 8000
+		},
+		{
+			"ModelName": "Acult02AMY",
+			"Unlocked": false,
+			"PointCost": 12000
+		},
+		{
+			"ModelName": "Mani",
+			"Unlocked": false,
+			"PointCost": 16000
+		},
+		{
+			"ModelName": "MovAlien01",
+			"Unlocked": false,
+			"PointCost": 25000
+		},
+	],
+	"Maps": [
+		{
+			"Name": "Parson\'s Clinic",
+			"Size": 24,
+			"BannedProps": [
+				"prop_fnclink_03c", "prop_fnclink_03a", "prop_rock_1_c", "prop_rock_3_j",
+				"prop_rock_1_b", "prop_rock_4_big", "prop_rock_4_b", "prop_tennis_ball",
+				"prop_paint_brush03"
+			],
+			"Hour": 12,
+			"Bounds": [
+				[-1479.786, 879.3613],  [-1473.647, 876.9698],  [-1460.606, 820.406],  [-1460.865, 819.8174],
+				[-1481.811, 809.6955],  [-1481.072, 808.279],  [-1483.287, 801.608],  [-1492.277, 794.001],
+				[-1498.337, 793.276],  [-1502.796, 793.9409],  [-1503.421, 795.1976],  [-1514.086, 790.1071],
+				[-1526.247, 784.4923],  [-1537.806, 773.6227],  [-1537.858, 772.2258],  [-1551.518, 765.7744],
+				[-1597.552, 744.2952],  [-1604.219, 743.3868],  [-1609.18, 744.5574],  [-1613.379, 747.1776],
+				[-1620.793, 762.7253],  [-1615.847, 776.0596],  [-1605.246, 781.7012],  [-1601.304, 786.2233],
+				[-1599.077, 793.1874],  [-1599.581, 798.4598],  [-1601.47, 803.5536],  [-1611.62, 826.437],
+				[-1612.227, 832.817],  [-1609.126, 840.4548],  [-1602.148, 846.6655],  [-1601.476, 845.5964],
+				[-1589.433, 854.6537],  [-1578.604, 862.7369],  [-1568.969, 869.7692],  [-1562.99, 874.9292],
+				[-1557.234, 883.8801],  [-1551.305, 889.9079],  [-1542.053, 894.975],  [-1532.138, 897.4897],
+				[-1526.309, 900.2592],  [-1520.267, 904.9686],  [-1515.674, 911.0349],  [-1512.992, 914.7762],
+				[-1501.29, 916.9839],  [-1499.236, 916.5623],  [-1493.351, 911.8457],  [-1486.674, 904.2708],
+				[-1481.012, 895.2299],  [-1477.17, 888.6797]
+			],
+			"SpawnPoint": [-1508.856, 886.299, 181.9589],
+			"MinZ": 175.0,
+			"MaxZ": 200.0,
+			"Weather": 0
+		},
+		{
+			"Name": "Pacific Standard Bank",
+			"Size": 24,
+			"BannedProps": [
+				"v_ilev_bk_vaultdoor", "v_ilev_bk_door", "v_ilev_bk_door2", "hei_prop_bank_cctv_01",
+				"hei_prop_hei_securitypanel", "hei_prop_hei_bankdoor_new", "prop_v_5_bclock",
+				"prop_game_clock_01", "v_ilev_j2_door", "prop_ld_bankdoors_02"
+			],
+			"Hour": 12,
+			"Bounds": [
+				[229.0191, 218.3521], [232.5182, 210.9954], [276.0165, 195.0978],
+				[298.9782,258.4947], [250.27, 276.5326]
+			],
+			"SpawnPoint": [235.0501, 216.9291, 106.2867],
+			"MinZ": 85.0,
+			"MaxZ": 115.0,
+			"Weather": 0
+		},
+		{
+			"Name": "FIB Building",
+			"Size": 24,
+			"BannedProps": ["v_ilev_fib_doore_l", "v_ilev_fib_doore_r", "v_ilev_fib_door_maint"],
+			"Hour": 12,
+			"Bounds": [],
+			"SpawnPoint": [118.5949, -737.9727, 242.1521],
+			"MinZ": 238.0,
+			"MaxZ": 247.0,
+			"Weather": 0
+		},
+		{
+			"Name": "Biker Club",
+			"Size": 24,
+			"BannedProps": [
+				"prop_fnclink_04l", "prop_fnclink_04k", "prop_fnclink_02k", "prop_com_gar_door_01",
+				"ng_proc_sodacan_02b", "ng_proc_food_burg02a", "ng_proc_food_chips01b",
+				"ng_proc_paper_01a", "prop_gas_tank_02a", "prop_damdoor_01", "prop_barrel_01a",
+				"v_ilev_lostdoor", "prop_dart_bd_cab_01", "v_ilev_losttoiletdoor", "prop_skip_04",
+				"prop_rub_carwreck_9", "prop_rub_carwreck_7"
+			],
+			"Hour": 12,
+			"Bounds": [
+				[936.2937, -118.0438], [948.2559, -132.8898], [985.9525, -156.547],
+				[1022.216, -120.6263], [980.888, -75.97195]
+			],
+			"SpawnPoint": [966.9628, -127.0965, 74.3569],
+			"MinZ": 68.0,
+			"MaxZ": 90.0,
+			"Weather": 0
+		},
+		{
+			"Name": "Aircraft Carrier",
+			"Size": 24,
+			"BannedProps": [
+				"hei_prop_carrier_aerial_1", "hei_prop_carrier_aerial_2", "hei_prop_carrier_radar_1",
+				"hei_prop_carrier_radar_2", "hei_prop_carrier_stair_01b", "hei_prop_carrier_stair_01a",
+				"hei_prop_carrier_defense_02", "hei_prop_carrier_defense_01", "hei_prop_carrier_lightset_1",
+				"prop_mb_ordnance_02"
+			],
+			"Hour": 21,
+			"Bounds": [],
+			"SpawnPoint": [3079.082, -4700.55, 15.26218],
+			"MinZ": -10.0,
+			"MaxZ": 100.0,
+			"Weather": 0
+		},
+	]
+}

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0206AEC3-FDCC-4C99-A426-D7CA2E59DCCE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PropHuntV.Server</RootNamespace>
+    <AssemblyName>PropHuntV.Server.net</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SERVER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;SERVER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CitizenFX.Core">
+      <HintPath>..\..\..\..\Documents\FiveM\FXServer\citizen\clr2\lib\mono\4.5\CitizenFX.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.0\lib\netstandard1.1\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation.net">
+      <HintPath>..\References\System.Runtime.InteropServices.RuntimeInformation.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\PropHuntV.Client\SharedModels\GameDataModel.cs">
+      <Link>SharedModels\GameDataModel.cs</Link>
+    </Compile>
+    <Compile Include="..\PropHuntV.Client\SharedModels\MapModel.cs">
+      <Link>SharedModels\MapModel.cs</Link>
+    </Compile>
+    <Compile Include="..\PropHuntV.Client\SharedModels\Weather.cs">
+      <Link>SharedModels\Weather.cs</Link>
+    </Compile>
+    <Compile Include="..\PropHuntV.Client\Util\CachedValue.cs">
+      <Link>Util\CachedValue.cs</Link>
+    </Compile>
+    <Compile Include="..\PropHuntV.Client\Util\Log.cs">
+      <Link>Util\Log.cs</Link>
+    </Compile>
+    <Compile Include="Player\Session.cs" />
+    <Compile Include="Player\SessionManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropHunt.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="ServerAccessor.cs" />
+    <Compile Include="SharedModels\CharacterModel.cs" />
+    <Compile Include="SharedModels\Data\UserDataModel.cs" />
+    <Compile Include="SharedModels\PlayerDataModel.cs" />
+    <Compile Include="SharedModels\ServerConfigModel.cs" />
+    <Compile Include="SharedModels\SessionDataModel.cs" />
+    <Compile Include="SharedModels\Data\UserModel.cs" />
+    <Compile Include="Util\CachedConvar.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y /d "$(TargetPath)" "%25USERPROFILE%25\Documents\FiveM\FXServer-data\resources\prophunt\server\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

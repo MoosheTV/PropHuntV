@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	color: #fff;
+	font-size: 14pt;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	user-select: none;
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 28pt;
+	text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+a {
+	text-decoration: none;
+}
+
+.lobby-top-row {
+	display: inline-flex;
+	flex-flow: row;
+	margin: 4vh;
+	align-items: center;
+}
+
+.lobby-top-row > span {
+	font-family: 'PT Sans Narrow', sans-serif;
+	color: #c7c7c7;
+	font-size: 28pt;
+	text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+	margin: 0 0.5em;
+	cursor: pointer;
+	transition: all 0.15s ease-in;
+}
+
+.lobby-top-row > span:hover, .lobby-top-row > .active {
+	color: #fff;
+	text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.quit-container {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1000000;
+	background-color: rgba(0, 0, 0, 0.6);
+	font-size: 18pt;
+	transition: all 0.2s ease-in;
+	display: none;
+}
+
+.quit-window {
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+	padding: 1em;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.quit-options {
+	display: table;
+	margin: 0.8em auto 0;
+}
+
+.quit-options > * {
+	margin: 1em 0.25em;
+	padding: 0.5em 1em;
+	color: #c7c7c7;
+	transition: all 0.2s ease-in;
+	border: 1px solid rgba(255, 255, 255, 0);
+	cursor: pointer;
+}
+
+.quit-options > *:hover {
+	color: #fff;
+	background-color: rgba(120, 120, 120, 0.4);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: url('prophuntv.png') no-repeat;
+	background-size: contain;
+	width: 360px;
+	height: 88px;
+	animation: hue 15s infinite alternate;
+	border-right: 1px solid rgba(255, 255, 255, 0.4);
+	margin-right: 1em;
+}
+
+#character-selection {
+	display: flex;
+	flex-flow: row;
+	flex: 4;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.character {
+	width: 12vh;
+	height: 12vh;
+	background-image: url('headshots/none.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 0.1s ease-in;
+	cursor: pointer;
+	filter: brightness(80%);
+}
+
+.character:hover, .character.selected {
+	filter: brightness(125%);
+}
+
+#edit {
+	display: table;
+	padding: 1em;
+	margin-left: 66vh;
+	max-width: 84vh;
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+#info {
+	display: inline-block;
+    float: right;
+    margin: 5vh 12vh;
+    font-size: 32pt;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.edit-title {
+	font-size: 28pt;
+	text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+.character.unlock {
+	background-position: 100% 0;
+}
+
+.character > .price {
+	margin: 0.4em 0.6em;
+	text-align: right;
+	color: rgba(255, 60, 60, 0.9);
+}
+
+.character > .price.right-price {
+	color: rgba(60, 255, 60, 0.9);
+}
+
+#playercount {
+	position: fixed;
+	text-align: right;
+	right: 12vh;
+	bottom: 5vh;
+	left: 0;
+	z-index: -3;
+	font-size: 32pt;
+	color: #fff;
+	text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	transition: all 0.2s ease-in;
+}
+
+.countdown {
+	position: fixed;
+	text-align: center;
+	left: 0;
+	right: 0;
+	top: 1vh;
+	z-index: -2;
+	font-size: 42pt;
+	color: rgba(255, 255, 255, 0.8);
+}
+.countdown > p {
+	padding: 0;
+	margin: 0;
+}
+
+#notification {
+	position: fixed;
+	text-align: center;
+	left: 0;
+	right: 0;
+	top: 18vh;
+	z-index: -1;
+	font-size: 48pt;
+	color: rgba(255, 255, 255, 0.8);
+	transition: all 0.2s ease-in;
+	opacity: 0;
+}
+
+.opaque {
+	opacity: 1 !important;
+}
+
+#countdown-message {
+	color: rgba(255, 255, 255, 0.2);
+	margin-top: -0.25em;
+}
+
+@keyframes hue {
+	from { filter: hue-rotate(0deg); }
+	to { filter: hue-rotate(20deg); }
+}
