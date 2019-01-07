@@ -1,4 +1,5 @@
 # PropHuntV
+![](https://i.imgur.com/n3EcYon.png)
 A standalone PropHunt gamemode for FiveM.
 
 This gametype was made as part of a submission into the [FiveM Gametype Contest](https://forum.fivem.net/t/fivem-gametype-contest-prizes/176808).
