@@ -1,0 +1,14 @@
+{
+	"DisplayName": "Mooshe",
+	"SteamId": "11000010619d8eb",
+	"Address": "127.0.0.1",
+	"GtaLicense": "",
+	"LastLogin": "2019-01-05T13:27:49.3892421Z",
+	"DateCreated": "2019-01-05T13:27:49.3892421Z",
+	"Data": {
+		"Experience": 0,
+		"Points": 1795,
+		"PedModel": "Juggalo01AFY",
+		"Unlockables": ["Juggalo01AFY", "TrafficWarden", "Tourist01AMM", "Beach01AFM", "Mani", "Bodybuild01AFM", "Juggalo01AMY"]
+	}
+}
